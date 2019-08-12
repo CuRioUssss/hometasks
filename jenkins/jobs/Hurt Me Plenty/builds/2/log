@@ -1,0 +1,9 @@
+Started by user [8mha:////4LwCCmSaiy0Mj+TUgj1pLkVMjhg0X1nH+/uGFvABrNaJAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyBEgYe/dLi1CL93MTs4sxcAB61n7nBAAAA[0mPauliukou Maksim
+Running as SYSTEM
+Собирается удаленно на [8mha:////4CGnVNlNCFSXkHT41cH12B61m+D9vdlOE6sfnxz3OJXSAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZB/eT83ILSktQifb/Ucj+gUwG8nH1JxgAAAA==[0mNewNode in workspace e:\newNode\workspace\Hurt Me Plenty
+[Hurt Me Plenty] $ cmd /c call C:\Users\E786~1\AppData\Local\Temp\jenkins7078393357218444277.bat
+
+e:\newNode\workspace\Hurt Me Plenty>ECHO hello   1>file.txt 
+
+e:\newNode\workspace\Hurt Me Plenty>exit 0 
+Finished: SUCCESS
