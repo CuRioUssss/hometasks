@@ -1,2 +1,2 @@
 # aircompany
-Project with "code smells" for refactoring
+Project after refactoring java-code

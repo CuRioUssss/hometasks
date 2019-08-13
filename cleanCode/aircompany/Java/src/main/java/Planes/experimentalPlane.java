@@ -1,16 +1,16 @@
-package Planes;
+package planes;
 
 import models.ClassificationLevel;
-import models.ExperimentalTypes;
+import models.ExperimentalType;
 
-public class experimentalPlane extends Plane{
+public class ExperimentalPlane extends Plane{
 
-    private ExperimentalTypes type;
+    private ExperimentalType experimentalType;
     private ClassificationLevel classificationLevel;
 
-    public experimentalPlane(String model, int maxSpeed, int maxFlightDistance, int maxLoadCapacity, ExperimentalTypes type, ClassificationLevel classificationLevel) {
+    public ExperimentalPlane(String model, int maxSpeed, int maxFlightDistance, int maxLoadCapacity, ExperimentalType experimentalType, ClassificationLevel classificationLevel) {
         super(model, maxSpeed, maxFlightDistance, maxLoadCapacity);
-        this.type = type;
+        this.experimentalType = experimentalType;
         this.classificationLevel = classificationLevel;
     }
 
@@ -22,20 +22,43 @@ public class experimentalPlane extends Plane{
         this.classificationLevel = classificationLevel;
     }
 
+    public ExperimentalType getExperimentalType() {
+        return experimentalType;
+    }
+
+    public void setExperimentalType(ExperimentalType experimentalType) {
+        this.experimentalType = experimentalType;
+    }
+
     @Override
     public boolean equals(Object o) {
-        return super.equals(o);
+        if (this == o) return true;
+        if (!(o instanceof ExperimentalPlane)) return false;
+        if (!super.equals(o)) return false;
+
+        ExperimentalPlane that = (ExperimentalPlane) o;
+
+        if (getExperimentalType() != that.getExperimentalType()) return false;
+        return getClassificationLevel() == that.getClassificationLevel();
     }
 
     @Override
     public int hashCode() {
-        return super.hashCode();
+        int result = super.hashCode();
+        result = 31 * result + getExperimentalType().hashCode();
+        result = 31 * result + getClassificationLevel().hashCode();
+        return result;
     }
 
     @Override
     public String toString() {
-        return "experimentalPlane{" +
-                "model='" + model + '\'' +
+        return "ExperimentalPlane{" +
+                "experimentalType=" + experimentalType +
+                ", classificationLevel=" + classificationLevel +
+                ", model='" + model + '\'' +
+                ", maxSpeed=" + maxSpeed +
+                ", maxFlightDistance=" + maxFlightDistance +
+                ", maxLoadCapacity=" + maxLoadCapacity +
                 '}';
     }
 }
